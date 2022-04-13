@@ -2,6 +2,7 @@ class Play extends Phaser.Scene {
     constructor() {
       super("playScene");
     }
+
     preload() {
       // load images/tile sprites
       this.load.image('rocket', './assets/rocket.png');
@@ -9,6 +10,7 @@ class Play extends Phaser.Scene {
       this.load.image('starfield', './assets/starfield.png');
       this.load.spritesheet('explosion', './assets/explosion.png', {frameWidth: 64, frameHeight: 32, startFrame: 0, endFrame: 9});
     }
+
     create() {
       // place tile sprite
       this.starfield = this.add.tileSprite(0, 0, 640, 480, 'starfield').setOrigin(0, 0);
@@ -34,7 +36,7 @@ class Play extends Phaser.Scene {
       keyR = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.R);
       keyLEFT = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.LEFT);
       keyRIGHT = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.RIGHT);
-  
+                    
       // animation config
       this.anims.create({
         key: 'explode',
@@ -43,7 +45,7 @@ class Play extends Phaser.Scene {
       });
   
       this.p1Score = 0;
-      // display score
+      // display score5
       let scoreConfig = {
         fontFamily: 'Courier',
         fontSize: '28px',
@@ -111,6 +113,7 @@ class Play extends Phaser.Scene {
         return false;
       }
     }
+    
     shipExplode(ship) {
       // temporarily hide ship
       ship.alpha = 0;
