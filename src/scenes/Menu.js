@@ -20,7 +20,7 @@ class Menu extends Phaser.Scene {
       this.starfield = this.add.tileSprite(0, 0, 640, 480, 'starfield').setOrigin(0, 0);
 
       let menuConfig = {
-        fontFamily: 'Courier',
+        fontFamily: 'Augusta',
         fontSize: '24px',
         backgroundColor: '#39D7F5',
         color: '#843605',
