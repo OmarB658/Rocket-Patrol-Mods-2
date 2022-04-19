@@ -33,7 +33,7 @@ class Menu extends Phaser.Scene {
       }
       this.add.text(game.config.width/2, game.config.height/2 - borderUISize - borderPadding, 'ROCKET PATROL (Medieval edition)', menuConfig).setOrigin(0.5, 2);
       this.add.text(game.config.width/2, game.config.height/2, 'Player 1: Use ←→ keys to move and ↑ to fire', menuConfig).setOrigin(0.5, 1.9);
-      this.add.text(game.config.width/2, game.config.height/2, 'Player 2: WA keys to move and W to fire', menuConfig).setOrigin(0.5);
+      this.add.text(game.config.width/2, game.config.height/2, 'Player 2: AD keys to move and W to fire', menuConfig).setOrigin(0.5);
 
       menuConfig.backgroundColor = '#FAFB9E';
       menuConfig.color = '#000';
